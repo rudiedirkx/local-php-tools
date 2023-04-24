@@ -1,0 +1,9 @@
+textarea, input {
+	width: 100%;
+}
+textarea.single {
+	height: 20em;
+}
+.code {
+	font-family: monospace;
+}
