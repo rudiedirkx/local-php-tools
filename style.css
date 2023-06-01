@@ -6,4 +6,5 @@ textarea.single {
 }
 .code {
 	font-family: monospace;
+	tab-size: 4;
 }
