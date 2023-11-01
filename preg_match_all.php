@@ -3,7 +3,9 @@
 require 'tpl.header.php';
 
 if (isset($_POST['pattern'], $_POST['subject'])) {
-	preg_match_all($_POST['pattern'], $_POST['subject'], $matches);
+	$subject = $_POST['subject'];
+	// $subject = str_replace("\r\n", "\n", $subject);
+	preg_match_all($_POST['pattern'], $subject, $matches);
 	echo '<pre><span style="background: pink">';
 	echo htmlspecialchars(print_r($matches, true));
 	echo '</span></pre>';
