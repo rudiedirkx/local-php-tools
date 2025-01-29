@@ -2,7 +2,7 @@ textarea, input {
 	width: 100%;
 }
 textarea.single {
-	height: 20em;
+	height: 85vh;
 }
 .code {
 	font-family: monospace;
